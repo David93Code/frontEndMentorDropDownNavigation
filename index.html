@@ -29,17 +29,17 @@
                 <span class="bar"></span>
                 <span class="bar"></span> -->
             </div>
-
+        </header>
             <nav id="burger-menu">
 
 
                 <ul class="nav-list">
                     <li>
-                        <a href="#">Features <img class="arrow-down" src="./resources/images/icon-arrow-down.svg"
+                        <a href="#" onclick="showSubMenuFeatures()">Features <img id="features-down" class="arrow-down" src="./resources/images/icon-arrow-down.svg"
                                 alt="">
-                            <img class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
+                            <img id="features-up" class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
 
-                        <ul class="sub-menu sub-menu-features">
+                        <ul id="sub-menu-features" class="sub-menu ">
                             <li>
                                 <img src="./resources/images/icon-todo.svg" alt="">
                                 <a href="#">To Do List</a>
@@ -59,9 +59,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Company <img src="./resources/images/icon-arrow-down.svg" alt=""></a>
+                        <a href="#" onclick="showSubMenuCompany()">Company <img id="company-down" class="arrow-down" src="./resources/images/icon-arrow-down.svg" alt="">
+                            <img id="company-up" class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
 
-                        <ul class="sub-menu sub-menu-company">
+                        <ul id="sub-menu-company" class="sub-menu ">
                             <li>
                                 <a href="#">History</a>
                             </li>
@@ -88,7 +89,7 @@
             </nav>
 
         </div>
-    </header>
+   
     <section class="content-container">
         <img class="image" src="./resources/images/image-hero-mobile.png" alt="">
         <div class="text">

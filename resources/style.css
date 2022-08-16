@@ -11,10 +11,7 @@ html {
     /* font-size: 10px; */
 }
 
-body {
-    /* background-color: #7F000000; */
-    background-color: red;
-}
+
 
 
 
@@ -106,6 +103,8 @@ nav {
     max-height: 0;
 }
 
+/* make a function with the below code and add it to the onclick event in order to show the sub menu */
+/* 
 .nav-list li:hover > .sub-menu {
     visibility: visible;
     max-height: initial;
@@ -114,7 +113,7 @@ nav {
 
 .nav-list li .arrow-down:hover {
     visibility: hidden;
-}
+} */
 
 .snap-logo {
     margin-left: .5rem;
@@ -124,4 +123,16 @@ nav {
 
  .image {
      width: 100%;
+    
+ }
+
+.arrow-up {
+    visibility: hidden;
+    position: relative;
+    left: -.9rem;
+}
+
+ .content-container {
+     margin-top: 5rem;
+     min-height: 784px;
  }
