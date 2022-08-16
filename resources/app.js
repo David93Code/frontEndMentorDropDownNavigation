@@ -52,3 +52,10 @@ function hideBurgerMenu() {
 //      document.getElementsByClassName('arrow-up').style.visibility = "visible";
 //      document.getElementsByClassName('arrow-down').style.visibility = "hidden";
 //  }
+
+
+//for the terminal 
+//git add .
+//git commit -m "message"
+//git push
+// and it will upload the new code to git hub account
