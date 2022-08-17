@@ -7,6 +7,8 @@ function showBurgerMenu() {
     document.getElementById('container').style.position = "absolute";
     document.getElementById('container').style.top = 0;
     document.getElementById('container').style.left = 0;
+    document.getElementById('features-down').style.visibility = "hidden";
+    document.getElementById('company-down').style.visibility = "visible";
 }
 
 // need to add a div next to the nav div and set its color to transparent black rgb(0, 0, 0, .5)
@@ -17,18 +19,19 @@ function hideBurgerMenu() {
     document.getElementById('close-x').style.visibility = "hidden";
     document.getElementById('container').style.background = "transparent";
     document.getElementById('sub-menu-features').style.visibility = "hidden";
-    document.getElementById('sub-menu-company').style.visibility = "hidden";
+     document.getElementById('sub-menu-company').style.visibility = "hidden";
+    //  document.getElementById('sub-menu-company').style.position = "initial";
+    //  document.getElementById('sub-menu-company').style.maxHeight = 0;
     document.getElementById('features-up').style.visibility = "hidden";
     document.getElementById('features-down').style.visibility = "hidden";
     document.getElementById('company-up').style.visibility = "hidden";
    document.getElementById('company-down').style.visibility = "hidden";
-   
+
 }
 
-  
 
-  const subMenuFeatures = document.getElementById('sub-menu-features');
 
+ 
 //   function showHideSubMenuFeatures() {
 //       if (subMenuFeatures.style.visibility.hidden === true) {
 //         document.getElementById('sub-menu-features').style.visibility = "visible";
@@ -44,7 +47,7 @@ function hideBurgerMenu() {
 //      }
 //        }
 
-let featuresId = document.getElementById("features-id").classList.toggle();
+
 
 // function showHideSubMenuFeatures() {
 //     if (featuresId.isChecked() === true) {
@@ -69,7 +72,7 @@ let featuresId = document.getElementById("features-id").classList.toggle();
 //          document.getElementById('features-down').style.visibility = "hidden";
 //      }
 //       }
-  
+
 
 //     function hideSubMenuFeatures() {
 //     if (subMenuFeatures.isChecked() === false) {
@@ -80,19 +83,47 @@ let featuresId = document.getElementById("features-id").classList.toggle();
 //     }
 //    }
 
-  function showSubMenuCompany() {
-    document.getElementById('sub-menu-company').style.visibility = "visible" ;
-    document.getElementById('sub-menu-company').style.maxHeight = "initial" ;
-    document.getElementById('company-up').style.visibility = "visible";
-    document.getElementById('company-down').style.visibility = "hidden";
-  }
+function showSubMenuFeatures() {
+    const features = document.getElementById("sub-menu-features");
+   if (features.style.visibility == "visible"){
+       features.style.visibility = "hidden";
+   } else {
+       features.style.visibility = "visible";
+   }
+   if (features.style.visibility == "visible") {
+       company.style.maxHeight = "200px";
+   } else {
+       company.style.maxHeight = 0;
+   }
+}
 
-  function hideSubMenuCompany() {
-    document.getElementById('sub-menu-company').style.visibility = "hidden" ;
-    document.getElementById('sub-menu-company').style.maxHeight = "initial" ;
-    document.getElementById('company-up').style.visibility = "hidden";
-    document.getElementById('company-down').style.visibility = "visible";
-  }
+function showSubMenuCompany() {
+    const company =document.getElementById("sub-menu-company");
+    if (company.style.visibility == "visible") {
+        company.style.visibility = "hidden";
+    } else {
+        company.style.visibility = "visible";
+}
+if (company.style.visibility == "visible") {
+   company.style.maxHeight = "initial";
+} else {
+    company.style.maxHeight = 0;
+}
+}
+
+//   function showSubMenuCompany() {
+//     document.getElementById('sub-menu-company').style.visibility = "visible" ;
+//     document.getElementById('sub-menu-company').style.maxHeight = "initial" ;
+//     document.getElementById('company-up').style.visibility = "visible";
+//     document.getElementById('company-down').style.visibility = "hidden";
+//   }
+
+//   function hideSubMenuCompany() {
+//     document.getElementById('sub-menu-company').style.visibility = "hidden" ;
+//     document.getElementById('sub-menu-company').style.maxHeight = "initial" ;
+//     document.getElementById('company-up').style.visibility = "hidden";
+//     document.getElementById('company-down').style.visibility = "visible";
+//   }
 
 
 //  function arrowUp() {
@@ -101,7 +132,7 @@ let featuresId = document.getElementById("features-id").classList.toggle();
 //  }
 
 
-//for the terminal 
+//for the terminal
 //git add .
 //git commit -m "message"
 //git push
