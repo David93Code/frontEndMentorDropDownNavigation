@@ -7,7 +7,7 @@ function showBurgerMenu() {
     document.getElementById('container').style.position = "absolute";
     document.getElementById('container').style.top = 0;
     document.getElementById('container').style.left = 0;
-    document.getElementById('features-down').style.visibility = "hidden";
+    document.getElementById('features-down').style.visibility = "visible";
     document.getElementById('company-down').style.visibility = "visible";
 }
 
@@ -28,6 +28,49 @@ function hideBurgerMenu() {
    document.getElementById('company-down').style.visibility = "hidden";
 
 }
+
+function showSubMenu(btnID) {
+    console.log(btnID);
+    const subMenu= document.getElementById("sub-menu-" + btnID);
+    if (subMenu.style.visibility == "visible") {
+        subMenu.style.visibility = "hidden";
+    } else {
+        subMenu.style.visibility = "visible";
+    }
+    if (subMenu.style.visibility == "visible") {
+        subMenu.style.maxHeight = "initial";
+    } else {
+        subMenu.style.maxHeight = 0;
+    }
+}
+
+// function showSubMenuFeatures() {
+//     const features = document.getElementById("sub-menu-features");
+//    if (features.style.visibility == "visible"){
+//        features.style.visibility = "hidden";
+//    } else {
+//        features.style.visibility = "visible";
+//    }
+//    if (features.style.visibility == "visible") {
+//        features.style.maxHeight = "200px";
+//    } else {
+//        features.style.maxHeight = 0;
+//    }
+// }
+
+// function showSubMenuCompany() {
+//     const company =document.getElementById("sub-menu-company");
+//     if (company.style.visibility == "visible") {
+//         company.style.visibility = "hidden";
+//     } else {
+//         company.style.visibility = "visible";
+// }
+// if (company.style.visibility == "visible") {
+//    company.style.maxHeight = "initial";
+// } else {
+//     company.style.maxHeight = 0;
+// }
+// }
 
 
 
@@ -83,33 +126,7 @@ function hideBurgerMenu() {
 //     }
 //    }
 
-function showSubMenuFeatures() {
-    const features = document.getElementById("sub-menu-features");
-   if (features.style.visibility == "visible"){
-       features.style.visibility = "hidden";
-   } else {
-       features.style.visibility = "visible";
-   }
-   if (features.style.visibility == "visible") {
-       company.style.maxHeight = "200px";
-   } else {
-       company.style.maxHeight = 0;
-   }
-}
 
-function showSubMenuCompany() {
-    const company =document.getElementById("sub-menu-company");
-    if (company.style.visibility == "visible") {
-        company.style.visibility = "hidden";
-    } else {
-        company.style.visibility = "visible";
-}
-if (company.style.visibility == "visible") {
-   company.style.maxHeight = "initial";
-} else {
-    company.style.maxHeight = 0;
-}
-}
 
 //   function showSubMenuCompany() {
 //     document.getElementById('sub-menu-company').style.visibility = "visible" ;
