@@ -82,8 +82,14 @@ nav {
     z-index: 1500;
 }
 
+.hamburger {
+   right: 0;
+}
+
 .close {
     visibility: hidden;
+    margin-right: 2rem;
+    
 }
 /* .bar {
     display: block;
@@ -135,4 +141,10 @@ nav {
  .content-container {
      margin-top: 5rem;
      min-height: 784px;
+ }
+
+ #company-2 {
+     position: relative;
+     left: -6.4rem;
+     visibility: hidden;
  }
