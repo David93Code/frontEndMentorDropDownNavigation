@@ -46,20 +46,20 @@ function hideBurgerMenu() {
 
 let featuresId = document.getElementById("features-id").classList.toggle();
 
-function showHideSubMenuFeatures() {
-    if (featuresId.isChecked() === true) {
-            document.getElementById('sub-menu-features').style.visibility = "visible";
-                 document.getElementById('sub-menu-features').style.maxHeight = "initial";
-                 document.getElementById('features-up').style.visibility = "visible";
-                 document.getElementById('features-down').style.visibility = "hidden";
-              }else if (featuresId.isChecked() === false) {
-                   document.getElementById('sub-menu-features').style.visibility = "hidden";
-                   document.getElementById('sub-menu-features').style.maxHeight = "initial";
-                   document.getElementById('features-up').style.visibility = "hidden";
-                   document.getElementById('features-down').style.visibility = "visible";
+// function showHideSubMenuFeatures() {
+//     if (featuresId.isChecked() === true) {
+//             document.getElementById('sub-menu-features').style.visibility = "visible";
+//                  document.getElementById('sub-menu-features').style.maxHeight = "initial";
+//                  document.getElementById('features-up').style.visibility = "visible";
+//                  document.getElementById('features-down').style.visibility = "hidden";
+//               }else if (featuresId.isChecked() === false) {
+//                    document.getElementById('sub-menu-features').style.visibility = "hidden";
+//                    document.getElementById('sub-menu-features').style.maxHeight = "initial";
+//                    document.getElementById('features-up').style.visibility = "hidden";
+//                    document.getElementById('features-down').style.visibility = "visible";
 
-              }
-}
+//               }
+// }
 
 //         function showSubMenuFeatures() {
 //             if (subMenuFeatures.isChecked() === true) {

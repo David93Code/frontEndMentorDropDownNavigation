@@ -148,3 +148,18 @@ nav {
      left: -6.4rem;
      visibility: hidden;
  }
+
+ #features {
+     cursor: pointer;
+     color:  hsl(0, 0%, 41%);
+ }
+
+ #features-checkbox {
+     /* display: none; */
+ }
+
+ #features-checkbox:checked ~ * #sub-menu-features {
+     visibility: visible;
+     position: initial;
+     max-height: 0;
+ }
