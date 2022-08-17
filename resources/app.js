@@ -34,14 +34,18 @@ function showSubMenu(btnID) {
     const subMenu= document.getElementById("sub-menu-" + btnID);
     if (subMenu.style.visibility == "visible") {
         subMenu.style.visibility = "hidden";
+        subMenu.style.maxHeight = "0px";
+        document.getElementById(btnID + "-down").srx = "./resources/images/icon-arrow-down.svg";
     } else {
         subMenu.style.visibility = "visible";
+        subMenu.style.maxHeight = "fit-content";
+        document.getElementById(btnID + "-down").srx = "./resources/images/icon-arrow-up.svg";
     }
-    if (subMenu.style.visibility == "visible") {
-        subMenu.style.maxHeight = "initial";
-    } else {
-        subMenu.style.maxHeight = 0;
-    }
+    // if (subMenu.style.visibility == "visible") {
+    //     subMenu.style.maxHeight = "initial";
+    // } else {
+    //     subMenu.style.maxHeight = 0;
+    // }
 }
 
 // function showSubMenuFeatures() {
