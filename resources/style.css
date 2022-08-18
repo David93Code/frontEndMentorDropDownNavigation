@@ -93,7 +93,7 @@ nav {
     /* display: none; */
     position: initial;
     max-height: 0;
-    width: 0;
+  
    
 }
 
@@ -205,7 +205,7 @@ nav {
          flex-direction: row;
          /* justify-content: space-between; */
          align-items: baseline;
-         border: 1px solid blue;
+         
      }
 
      .snap-logo {
@@ -238,11 +238,13 @@ nav {
        
         
         left: 0;
-        border: 1px solid red;
+        
         width: 95%;
         height: 5rem;
         
      }
+
+   
      .nav-list li {
         margin-right: 1rem;
      }
@@ -252,17 +254,19 @@ nav {
 
      }
 
-     .sub-menu {
+     #features:hover > #sub-menu-features {
          /* display: block; */
-         position: relative;
-         left: -3rem;
+        visibility: visible;
          border: 1px solid white;
          border-radius: 10px;
          background-color: white;
          height: 10rem;
          line-height: 1rem;
          box-shadow: 10px 10px 20px 1px  ;
+
+         position: absolute;
      }
+    
 
      
      .log-in-div {
