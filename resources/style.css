@@ -177,14 +177,17 @@ nav {
         display: none;
      } */
 
+     .container {
+         border: 1px solid blue;
+     }
+
      #burger-menu .nav-list  {
          visibility: visible;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 1rem;
         left: 0;
         border: 1px solid red;
         width: 100%;
-        
      }
  }
