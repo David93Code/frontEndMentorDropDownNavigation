@@ -254,8 +254,8 @@ nav {
 
      }
 
-     #features:hover > #sub-menu-features {
-         /* display: block; */
+     /* #features:hover  #sub-menu-features {
+       
         visibility: visible;
          border: 1px solid white;
          border-radius: 10px;
@@ -266,6 +266,18 @@ nav {
 
          position: absolute;
      }
+     #company:hover  #sub-menu-company {
+       
+       visibility: visible;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        height: 10rem;
+        line-height: 1rem;
+        box-shadow: 10px 10px 20px 1px  ;
+
+        position: absolute;
+    } */
     
 
      
