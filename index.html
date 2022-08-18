@@ -17,29 +17,27 @@
     <!--Video at 10 min style for nav desktop size
     -->
     <header>
-        <div id="container" class="container">
-            <img class="snap-logo" src="./resources/images/logo.svg" alt="snap logo">
+        <img class="snap-logo" src="./resources/images/logo.svg" alt="snap logo">
+       
+           
 
             <div class="menu-icons">
                 <img id="hamburger-menu" class="hamburger" onclick="showBurgerMenu()"
                     src="./resources/images/icon-menu.svg" alt="">
                 <img id="close-x" class="close" onclick="hideBurgerMenu()" src="./resources/images/icon-close-menu.svg"
                     alt="">
-                <!-- <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span> -->
             </div>
-        </header>
+            
             <nav id="burger-menu">
 
 
                 <ul class="nav-list">
+                    <div class="ul-nav">
                     <li>
                        
                         <a  href="#" onclick="showSubMenu(this.id)" id="features">Features <img id="features-down" class="arrow-down" src="./resources/images/icon-arrow-down.svg"
                                 alt="">
-                            <!-- <img id="features-up" class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a> -->
-
+                           
                         <ul id="sub-menu-features" class="sub-menu ">
                             <li>
                                 <img src="./resources/images/icon-todo.svg" alt="">
@@ -82,15 +80,18 @@
                     <li>
                         <a href="#">About</a>
                     </li>
+                </div>
                     <div class="log-in-div">
                         <a href="#">Log In</a>
                         <a class="register" href="#">Register</a>
                     </div>
                 </ul>
+                
 
             </nav>
-
-        </div>
+          
+        
+    </header>
 
     <section class="content-container">
         <img class="image" src="./resources/images/image-hero-mobile.png" alt="">
@@ -101,13 +102,14 @@
             <button class="button-learn">
                 <a href="#">Learn More</a>
             </button>
+            <div class="bottom-logos">
+                <img src="./resources/images/client-databiz.svg" alt="databiz logo">
+                <img src="./resources/images/client-audiophile.svg" alt="audiophile logo">
+                <img src="./resources/images/client-meet.svg" alt="meet logo">
+                <img src="./resources/images/client-maker.svg" alt="maker logo">
+            </div>
         </div>
-        <div class="bottom-logos">
-            <img src="./resources/images/client-databiz.svg" alt="databiz logo">
-            <img src="./resources/images/client-audiophile.svg" alt="audiophile logo">
-            <img src="./resources/images/client-meet.svg" alt="meet logo">
-            <img src="./resources/images/client-maker.svg" alt="maker logo">
-        </div>
+       
     </section>
 
     <script src="./resources/app.js"></script>

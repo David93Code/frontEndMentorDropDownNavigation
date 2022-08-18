@@ -52,7 +52,6 @@ nav {
 
     margin-top: 5rem;
     padding-left: 1rem;
-    line-height: 2.7rem;
     height: 100vh;
     text-align: left;
     width: 70%;
@@ -91,8 +90,11 @@ nav {
 .sub-menu {
 
     visibility: hidden;
+    /* display: none; */
     position: initial;
     max-height: 0;
+    width: 0;
+   
 }
 
 
@@ -176,18 +178,105 @@ nav {
      .sub-menu {
         display: none;
      } */
-
+/* 
      .container {
          border: 1px solid blue;
+        
+        display: flex;
+        flex-direction: row;
+       
+
+     } */
+     header {
+         display: flex;
+         flex-direction: row;
+         /* justify-content: space-between; */
+         align-items: baseline;
+         border: 1px solid blue;
      }
+
+     .snap-logo {
+         margin-top: rem;
+         margin-right: 1rem;
+         
+     }
+
+     #features  {
+         margin-right: 0;
+     }
+
+  
+
+    #burger-menu {
+        display: flex;
+        width: 100%;
+        top: 0;
+        
+        position: relative;
+        
+    }
 
      #burger-menu .nav-list  {
          visibility: visible;
         display: flex;
-        justify-content: space-evenly;
-        margin-top: 1rem;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 0;
+       
+        
         left: 0;
         border: 1px solid red;
-        width: 100%;
+        width: 95%;
+        height: 5rem;
+        
+     }
+     .nav-list li {
+        margin-right: 1rem;
+     }
+
+     .ul-nav {
+         display: flex;
+
+     }
+
+     .sub-menu {
+         /* display: block; */
+         position: relative;
+         left: -3rem;
+         border: 1px solid white;
+         border-radius: 10px;
+         background-color: white;
+         height: 10rem;
+         line-height: 1rem;
+         box-shadow: 10px 10px 20px 1px  ;
+     }
+
+     
+     .log-in-div {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .register {
+         padding: 0 .5rem 0 .5rem;
+         line-height: 2rem;
+         margin-left: 1rem;
+     }
+
+     .content-container {
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: flex-start;
+         top: 0;
+         border: 1px solid red;
+     }
+
+     .image {
+         width: 40%;
+     }
+
+     .text {
+         display: flex;
+         flex-direction: column;
      }
  }
