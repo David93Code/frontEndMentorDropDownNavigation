@@ -35,11 +35,11 @@ function showSubMenu(btnID) {
     if (subMenu.style.visibility == "visible") {
         subMenu.style.visibility = "hidden";
         subMenu.style.maxHeight = "0px";
-        document.getElementById(btnID + "-down").srx = "./resources/images/icon-arrow-down.svg";
+        document.getElementById(btnID + "-down").src = "./resources/images/icon-arrow-down.svg";
     } else {
         subMenu.style.visibility = "visible";
         subMenu.style.maxHeight = "fit-content";
-        document.getElementById(btnID + "-down").srx = "./resources/images/icon-arrow-up.svg";
+        document.getElementById(btnID + "-down").src = "./resources/images/icon-arrow-up.svg";
     }
     // if (subMenu.style.visibility == "visible") {
     //     subMenu.style.maxHeight = "initial";
