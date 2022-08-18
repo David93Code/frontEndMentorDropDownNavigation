@@ -2,7 +2,7 @@
 
 html {
     font-family: 'Epilogue', sans-serif;
-  
+
 }
 
 
@@ -78,7 +78,7 @@ nav {
 
 .hamburger {
    margin-right: 0;
-   
+
 }
 
 .close {
@@ -89,7 +89,7 @@ nav {
 
 
 .sub-menu {
-   
+
     visibility: hidden;
     position: initial;
     max-height: 0;
@@ -116,8 +116,10 @@ nav {
 
  .content-container {
      margin-top: 5rem;
+     /* margin-right: auto;
+     margin-left: auto; */
      min-height: 784px;
-     max-height: 620px;
+     max-width: 600px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -154,7 +156,35 @@ nav {
 
  .bottom-logos img {
      width: 5rem;
-   
+
  }
 
- @media all and (max-width: )
+ @media all and (min-width: 600px) {
+     .hamburger, .close {
+         display: none;
+     }
+     /* .nav-list {
+         display: flex;
+         justify-content: ;
+
+     }
+     .nav-list li {
+         visibility: visible;
+         display: flex;
+         flex-direction: row;
+     }
+     .sub-menu {
+        display: none;
+     } */
+
+     #burger-menu .nav-list  {
+         visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        left: 0;
+        border: 1px solid red;
+        width: 100%;
+        
+     }
+ }

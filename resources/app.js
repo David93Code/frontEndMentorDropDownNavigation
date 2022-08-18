@@ -11,7 +11,7 @@ function showBurgerMenu() {
    
 }
 
-// need to add a div next to the nav div and set its color to transparent black rgb(0, 0, 0, .5)
+
 
 function hideBurgerMenu() {
     document.getElementById('burger-menu').style.visibility = "hidden";
@@ -20,8 +20,7 @@ function hideBurgerMenu() {
     document.getElementById('container').style.background = "transparent";
     document.getElementById('sub-menu-features').style.visibility = "hidden";
      document.getElementById('sub-menu-company').style.visibility = "hidden";
-    //  document.getElementById('sub-menu-company').style.position = "initial";
-    //  document.getElementById('sub-menu-company').style.maxHeight = 0;
+   
     document.getElementById('features-up').style.visibility = "hidden";
     document.getElementById('features-down').style.visibility = "hidden";
     document.getElementById('company-up').style.visibility = "hidden";
