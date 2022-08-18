@@ -97,7 +97,20 @@ nav {
    
 }
 
+#sub-menu-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10rem;
+}
 
+#sub-menu-company {
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
 
 .snap-logo {
     margin-left: .5rem;

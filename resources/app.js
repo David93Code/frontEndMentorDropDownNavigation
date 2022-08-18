@@ -34,7 +34,7 @@ function hideBurgerMenu() {
        if (subMenu.style.visibility == "visible") {
            subMenu.style.visibility = "hidden";
            subMenu.style.maxHeight = "0px";
-           document.getElementById("sub-menu-features").style.width = "100px";
+           document.getElementById("sub-menu-features").style.width = "120px";
            document.getElementById("sub-menu-company").style.width = "100px";
            document.getElementById(btnID + "-down").src = "./resources/images/icon-arrow-down.svg";
        } else {
